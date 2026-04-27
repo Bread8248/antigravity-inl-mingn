@@ -6,18 +6,18 @@
     --bg-darker: #05070a;
     --text-main: #e2e8f0;
     --text-muted: #94a3b8;
-    
+
     /* Vibrant CS Theme Accents */
     --accent-primary: #0ea5e9;
     --accent-secondary: #22d3ee;
     --accent-glow: rgba(14, 165, 233, 0.5);
-    
+
     --glass-bg: rgba(255, 255, 255, 0.03);
     --glass-border: rgba(255, 255, 255, 0.08);
 
     --font-sans: 'Inter', sans-serif;
     --font-mono: 'Fira Code', monospace;
-    
+
     --transition-fast: 0.2s ease;
     --transition-medium: 0.4s ease;
 }
@@ -43,7 +43,10 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     color: #fff;
     line-height: 1.2;
 }
@@ -145,7 +148,7 @@ nav.scrolled {
 }
 
 .nav-container {
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 0 2rem;
     display: flex;
@@ -217,7 +220,7 @@ nav.scrolled {
     text-align: center;
     padding: 0 2rem;
     /* Hero Image */
-    background: url('hero-bg.png') no-repeat center center/cover;
+    background: url('Computer Science Program Hero.jpg') no-repeat center center/cover;
 }
 
 .hero-overlay {
@@ -227,12 +230,10 @@ nav.scrolled {
     width: 100%;
     height: 100%;
     /* Gradient overlay per users request */
-    background: linear-gradient(
-        to bottom, 
-        rgba(10, 14, 23, 0.3) 0%, 
-        rgba(10, 14, 23, 0.8) 60%, 
-        var(--bg-dark) 100%
-    );
+    background: linear-gradient(to bottom,
+            rgba(10, 14, 23, 0.3) 0%,
+            rgba(10, 14, 23, 0.8) 60%,
+            var(--bg-dark) 100%);
     z-index: 1;
 }
 
@@ -288,7 +289,8 @@ nav.scrolled {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    padding: 0; /* Reset padding for image reach */
+    padding: 0;
+    /* Reset padding for image reach */
 }
 
 .skill-card:hover {
@@ -301,7 +303,8 @@ nav.scrolled {
     height: 160px;
     width: 100%;
     overflow: hidden;
-    background: #fff; /* for logo visibility */
+    background: #fff;
+    /* for logo visibility */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -315,7 +318,8 @@ nav.scrolled {
 }
 
 .sql-logos {
-    background: #111; /* Dark background for SQL images to adapt nicely */
+    background: #111;
+    /* Dark background for SQL images to adapt nicely */
 }
 
 .sql-logos img {
@@ -384,10 +388,17 @@ nav.scrolled {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: #ef4444; /* macOS traffic lights */
+    background: #ef4444;
+    /* macOS traffic lights */
 }
-.window-controls span:nth-child(2) { background: #eab308; }
-.window-controls span:nth-child(3) { background: #22c55e; }
+
+.window-controls span:nth-child(2) {
+    background: #eab308;
+}
+
+.window-controls span:nth-child(3) {
+    background: #22c55e;
+}
 
 .window-title {
     margin: 0 auto;
@@ -504,7 +515,7 @@ footer {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .hero-content h1 {
         font-size: 3.5rem;
     }
@@ -526,7 +537,7 @@ footer {
         text-align: center;
         transition: 0.3s;
         padding: 2rem 0;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     }
 
     .nav-links.active {
