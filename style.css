@@ -110,8 +110,10 @@ a {
 .section-title::before {
     content: '';
     position: absolute;
-    top: 0; left: 0;
-    width: 30px; height: 30px;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
     border-top: 3px solid var(--accent-primary);
     border-left: 3px solid rgba(209, 176, 84, 0.4);
 }
@@ -119,8 +121,10 @@ a {
 .section-title::after {
     content: '';
     position: absolute;
-    bottom: 0; right: 0;
-    width: 30px; height: 30px;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
     border-bottom: 3px solid var(--accent-primary);
     border-right: 3px solid rgba(209, 176, 84, 0.4);
 }
@@ -255,8 +259,10 @@ nav {
 .huge-title::before {
     content: '';
     position: absolute;
-    top: 0; left: 0;
-    width: 40px; height: 40px;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
     border-top: 4px solid var(--accent-primary);
     border-left: 4px solid rgba(209, 176, 84, 0.4);
 }
