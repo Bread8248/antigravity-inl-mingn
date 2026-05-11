@@ -21,26 +21,34 @@
         <div class="nav-container">
             <a href="index.html" class="logo">MW<span class="highlight">.</span></a>
             <ul class="nav-links">
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#skills">Skills</a></li>
-                <li><a href="index.html#vibe-coding">Vibe Coding</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#about" data-i18n="nav-about">About</a></li>
+                <li><a href="index.html#skills" data-i18n="nav-skills">Skills</a></li>
+                <li><a href="index.html#vibe-coding" data-i18n="nav-vibe">Vibe Coding</a></li>
+                <li><a href="index.html#contact" data-i18n="nav-contact">Contact</a></li>
             </ul>
+            <div class="lang-switcher">
+                <span class="lang-label">EN</span>
+                <label class="switch">
+                    <input type="checkbox" id="lang-toggle">
+                    <span class="slider round"></span>
+                </label>
+                <span class="lang-label">SV</span>
+            </div>
         </div>
     </nav>
 
     <section class="section" style="padding-top: 10rem; min-height: 80vh;">
         <div class="container">
-            <a href="index.html#skills" class="btn btn-primary" style="margin-bottom: 2rem;">&larr; Back to Skills</a>
-            <h2 class="section-title">Fritzing <span class="highlight">Circuit Design</span></h2>
+            <a href="index.html#skills" class="btn btn-primary" style="margin-bottom: 2rem;" data-i18n="back-to-skills">&larr; Back to Skills</a>
+            <h2 class="section-title">Fritzing <span class="highlight" data-i18n="skill-fritzing-title-detail">Circuit Design</span></h2>
             
             <div class="about-content glass-panel" style="max-width: 900px; margin: 0 auto;">
                 <div class="about-text">
                     <img src="fritzingimage.png" alt="Fritzing Project" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 8px; margin-bottom: 2rem;">
                     
-                    <h3>Circuit Design & PCB Layout</h3>
-                    <p>Fritzing is an open-source hardware initiative that makes electronics accessible as a creative material for anyone. We offer a software tool, a community website, and services in the spirit of Processing and Arduino.</p>
-                    <p>In my projects, I utilize Fritzing to map out complex hardware interactions efficiently. It allows me to design electronic circuits, prototype with breadboards, and create final PCB layouts for professional manufacturing. By bridging the gap between physical prototypes and digital representations, Fritzing is an invaluable tool in my hardware engineering workflow.</p>
+                    <h3 data-i18n="fritzing-detail-h3">Circuit Design & PCB Layout</h3>
+                    <p data-i18n="fritzing-detail-p1">Fritzing is an open-source hardware initiative that makes electronics accessible as a creative material for anyone. We offer a software tool, a community website, and services in the spirit of Processing and Arduino.</p>
+                    <p data-i18n="fritzing-detail-p2">In my projects, I utilize Fritzing to map out complex hardware interactions efficiently. It allows me to design electronic circuits, prototype with breadboards, and create final PCB layouts for professional manufacturing. By bridging the gap between physical prototypes and digital representations, Fritzing is an invaluable tool in my hardware engineering workflow.</p>
                 </div>
             </div>
         </div>
@@ -49,7 +57,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 Michal Weglewski. Designed with passion.</p>
+            <p data-i18n="footer-text">&copy; 2026 Michal Weglewski. Designed with passion.</p>
         </div>
     </footer>
 

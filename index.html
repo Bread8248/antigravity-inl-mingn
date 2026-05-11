@@ -22,11 +22,19 @@
         <div class="nav-container">
             <a href="#hero" class="logo">MW<span class="highlight">.</span></a>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#vibe-coding">Vibe Coding</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" data-i18n="nav-about">About</a></li>
+                <li><a href="#skills" data-i18n="nav-skills">Skills</a></li>
+                <li><a href="#vibe-coding" data-i18n="nav-vibe">Vibe Coding</a></li>
+                <li><a href="#contact" data-i18n="nav-contact">Contact</a></li>
             </ul>
+            <div class="lang-switcher">
+                <span class="lang-label">EN</span>
+                <label class="switch">
+                    <input type="checkbox" id="lang-toggle">
+                    <span class="slider round"></span>
+                </label>
+                <span class="lang-label">SV</span>
+            </div>
             <div class="hamburger">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -40,17 +48,21 @@
         <div class="container">
             <div class="welcome-layout">
                 <div class="welcome-text">
-                    <h1 class="huge-title">Welcome.</h1>
+                    <h1 class="huge-title" data-i18n="welcome-title">Welcome.</h1>
                     <div class="welcome-desc">
-                        <p>My name is <strong>Michal Weglewski</strong>, and I am currently in my last year of the
+                        <p data-i18n="welcome-p1">My name is <strong>Michal Weglewski</strong>, and I am currently in my last year of the
                             Swedish
                             high school (Gymnasiet). I have a deep passion for computer science and software
                             development.</p>
-                        <p>I enjoy bringing ideas to life, whether it's through interactive hardware projects, building
+                        <p data-i18n="welcome-p2">I enjoy bringing ideas to life, whether it's through interactive hardware projects, building
                             robust databases, or crafting creative layouts. I am constantly learning new technologies
                             and
                             exploring innovative ways to code.</p>
                     </div>
+                    <a href="about.html" class="show-more-link" data-i18n="show-more">
+                        Show More
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
                 </div>
             </div>
         </div>
@@ -59,8 +71,8 @@
     <!-- Skills Section -->
     <section id="skills" class="section">
         <div class="container">
-            <h2 class="section-title">My <span class="highlight">Skills</span></h2>
-            <p class="section-subtitle">A scalable overview of my current tech stack and projects.</p>
+            <h2 class="section-title"><span data-i18n="skills-title-my">My</span> <span class="highlight" data-i18n="skills-title-skills">Skills</span></h2>
+            <p class="section-subtitle" data-i18n="skills-subtitle">A scalable overview of my current tech stack and projects.</p>
 
             <div class="skills-grid">
                 <!-- Skill 1: Fritzing -->
@@ -69,8 +81,8 @@
                         <img src="fritzingimage.png" alt="Fritzing Project" loading="lazy">
                     </div>
                     <div class="card-content">
-                        <h3>Fritzing</h3>
-                        <p>Designing electronic circuits and PCB layouts. Utilizing Fritzing to map out complex hardware
+                        <h3 data-i18n="skill-fritzing-title">Fritzing</h3>
+                        <p data-i18n="skill-fritzing-desc">Designing electronic circuits and PCB layouts. Utilizing Fritzing to map out complex hardware
                             interactions efficiently.</p>
                     </div>
                 </a>
@@ -81,8 +93,8 @@
                         <img src="Raspberry pi pico.jpg" alt="Raspberry Pi Pico Project" loading="lazy">
                     </div>
                     <div class="card-content">
-                        <h3>Raspberry Pi Pico</h3>
-                        <p>Hardware programming utilizing components such as buttons, count displays, LEDs, and buzzers
+                        <h3 data-i18n="skill-pico-title">Raspberry Pi Pico</h3>
+                        <p data-i18n="skill-pico-desc">Hardware programming utilizing components such as buttons, count displays, LEDs, and buzzers
                             to build interactive physical systems.</p>
                     </div>
                 </a>
@@ -94,8 +106,8 @@
                             alt="Microsoft SQL Icon" loading="lazy">
                     </div>
                     <div class="card-content">
-                        <h3>Microsoft SQL</h3>
-                        <p>Searching in databases, creating databases & tables, inserting values, enforcing constraint
+                        <h3 data-i18n="skill-sql-title">Microsoft SQL</h3>
+                        <p data-i18n="skill-sql-desc">Searching in databases, creating databases & tables, inserting values, enforcing constraint
                             types, and writing Views & Stored Procedures.</p>
                     </div>
                 </a>
@@ -110,8 +122,8 @@
                         </svg>
                     </div>
                     <div class="card-content">
-                        <h3>Programming in C#</h3>
-                        <p>Building applications with C#, leveraging object-oriented programming principles to solve
+                        <h3 data-i18n="skill-csharp-title">Programming in C#</h3>
+                        <p data-i18n="skill-csharp-desc">Building applications with C#, leveraging object-oriented programming principles to solve
                             intricate software challenges.</p>
                     </div>
                 </a>
@@ -122,7 +134,7 @@
     <!-- Vibe Coding Section -->
     <section id="vibe-coding" class="section bg-darker">
         <div class="container">
-            <h2 class="section-title">View on <span class="highlight">Vibe Coding</span></h2>
+            <h2 class="section-title"><span data-i18n="vibe-title-view">View on</span> <span class="highlight" data-i18n="vibe-title-vibe">Vibe Coding</span></h2>
             <div class="vibe-template glass-panel">
                 <div class="vibe-header">
                     <div class="window-controls">
@@ -131,12 +143,12 @@
                     <div class="window-title">vibe_coding.md</div>
                 </div>
                 <div class="vibe-body">
-                    <p>I think vibe coding is a great concept but it's not always practical. AI can help build
+                    <p data-i18n="vibe-p1">I think vibe coding is a great concept but it's not always practical. AI can help build
                         applications or websites fast, but it doesn't always meet the requirements of the user. I think
                         it's best to use AI as a tool to help you build the ground for applications or websites, but use
                         your own brain to actually make sure they are secure, meet demands, changes are documented and
                         the code is efficient.</p>
-                    <p>It's important to be able to adapt and use the newest technologies to stay competetive, but also
+                    <p data-i18n="vibe-p2">It's important to be able to adapt and use the newest technologies to stay competetive, but also
                         know the risks that could come with it.</p>
                 </div>
             </div>
@@ -148,26 +160,33 @@
         <div class="container">
             <div class="contact-wrapper">
                 <div class="contact-info">
-                    <h2 class="section-title">Get in <span class="highlight">Touch</span></h2>
-                    <p>Interested in collaborating or have a question? Leave a message below, and I'll get back to you
+                    <h2 class="section-title"><span data-i18n="contact-title-get">Get in</span> <span class="highlight" data-i18n="contact-title-touch">Touch</span></h2>
+                    <p data-i18n="contact-desc">Interested in collaborating or have a question? Leave a message below, and I'll get back to you
                         soon.</p>
                 </div>
                 <div class="contact-form glass-panel">
                     <form id="portfolio-form">
+                        <div data-fs-success class="success-message" style="display:none;" data-i18n="form-success">
+                            Thanks! Your message has been sent.
+                        </div>
+                        <div data-fs-error class="error-message" style="display:none;" data-i18n="form-error">
+                            Oops! There was a problem submitting your form.
+                        </div>
+
                         <div class="input-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                            <label for="name" data-i18n="form-name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe" data-fs-field>
                         </div>
                         <div class="input-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            <label for="email" data-i18n="form-email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com" data-fs-field>
                         </div>
                         <div class="input-group">
-                            <label for="message">Message</label>
+                            <label for="message" data-i18n="form-message">Message</label>
                             <textarea id="message" name="message" rows="5" required
-                                placeholder="How can I help you?"></textarea>
+                                placeholder="How can I help you?" data-fs-field></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+                        <button type="submit" class="btn btn-primary submit-btn" data-i18n="form-submit" data-fs-submit-btn>Send Message</button>
                     </form>
                 </div>
             </div>
@@ -177,11 +196,16 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 Michal Weglewski. Designed with passion.</p>
+            <p data-i18n="footer-text">&copy; 2026 Michal Weglewski. Designed with passion.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+        formspree('initForm', { formElement: '#portfolio-form', formId: 'mbdwqyen' });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 
 </html>

@@ -21,26 +21,34 @@
         <div class="nav-container">
             <a href="index.html" class="logo">MW<span class="highlight">.</span></a>
             <ul class="nav-links">
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#skills">Skills</a></li>
-                <li><a href="index.html#vibe-coding">Vibe Coding</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#about" data-i18n="nav-about">About</a></li>
+                <li><a href="index.html#skills" data-i18n="nav-skills">Skills</a></li>
+                <li><a href="index.html#vibe-coding" data-i18n="nav-vibe">Vibe Coding</a></li>
+                <li><a href="index.html#contact" data-i18n="nav-contact">Contact</a></li>
             </ul>
+            <div class="lang-switcher">
+                <span class="lang-label">EN</span>
+                <label class="switch">
+                    <input type="checkbox" id="lang-toggle">
+                    <span class="slider round"></span>
+                </label>
+                <span class="lang-label">SV</span>
+            </div>
         </div>
     </nav>
 
     <section class="section" style="padding-top: 10rem; min-height: 80vh;">
         <div class="container">
-            <a href="index.html#skills" class="btn btn-primary" style="margin-bottom: 2rem;">&larr; Back to Skills</a>
-            <h2 class="section-title">Raspberry Pi <span class="highlight">Pico</span></h2>
+            <a href="index.html#skills" class="btn btn-primary" style="margin-bottom: 2rem;" data-i18n="back-to-skills">&larr; Back to Skills</a>
+            <h2 class="section-title">Raspberry Pi <span class="highlight" data-i18n="skill-pico-title-detail">Pico</span></h2>
             
             <div class="about-content glass-panel" style="max-width: 900px; margin: 0 auto;">
                 <div class="about-text">
                     <img src="Raspberry pi pico.jpg" alt="Raspberry Pi Pico Project" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 8px; margin-bottom: 2rem;">
                     
-                    <h3>Physical Computing & Microcontrollers</h3>
-                    <p>The Raspberry Pi Pico is a versatile microcontroller board built using the RP2040 microcontroller chip. It provides a perfect platform for learning hardware programming and interfacing directly with physical components.</p>
-                    <p>My work with the Pico involves programming in MicroPython or embedded C/C++ to utilize components such as tactile buttons, environmental sensors, 7-segment numerical displays, RGB LEDs, and buzzers. These projects combine both software logic and electrical engineering fundamentals to build interactive physical systems capable of responding to real-world stimuli.</p>
+                    <h3 data-i18n="pico-detail-h3">Physical Computing & Microcontrollers</h3>
+                    <p data-i18n="pico-detail-p1">The Raspberry Pi Pico is a versatile microcontroller board built using the RP2040 microcontroller chip. It provides a perfect platform for learning hardware programming and interfacing directly with physical components.</p>
+                    <p data-i18n="pico-detail-p2">My work with the Pico involves programming in MicroPython or embedded C/C++ to utilize components such as tactile buttons, environmental sensors, 7-segment numerical displays, RGB LEDs, and buzzers. These projects combine both software logic and electrical engineering fundamentals to build interactive physical systems capable of responding to real-world stimuli.</p>
                 </div>
             </div>
         </div>
@@ -49,7 +57,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 Michal Weglewski. Designed with passion.</p>
+            <p data-i18n="footer-text">&copy; 2026 Michal Weglewski. Designed with passion.</p>
         </div>
     </footer>
 

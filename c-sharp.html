@@ -21,18 +21,26 @@
         <div class="nav-container">
             <a href="index.html" class="logo">MW<span class="highlight">.</span></a>
             <ul class="nav-links">
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#skills">Skills</a></li>
-                <li><a href="index.html#vibe-coding">Vibe Coding</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#about" data-i18n="nav-about">About</a></li>
+                <li><a href="index.html#skills" data-i18n="nav-skills">Skills</a></li>
+                <li><a href="index.html#vibe-coding" data-i18n="nav-vibe">Vibe Coding</a></li>
+                <li><a href="index.html#contact" data-i18n="nav-contact">Contact</a></li>
             </ul>
+            <div class="lang-switcher">
+                <span class="lang-label">EN</span>
+                <label class="switch">
+                    <input type="checkbox" id="lang-toggle">
+                    <span class="slider round"></span>
+                </label>
+                <span class="lang-label">SV</span>
+            </div>
         </div>
     </nav>
 
     <section class="section" style="padding-top: 10rem; min-height: 80vh;">
         <div class="container">
-            <a href="index.html#skills" class="btn btn-primary" style="margin-bottom: 2rem;">&larr; Back to Skills</a>
-            <h2 class="section-title">Programming in <span class="highlight">C#</span></h2>
+            <a href="index.html#skills" class="btn btn-primary" style="margin-bottom: 2rem;" data-i18n="back-to-skills">&larr; Back to Skills</a>
+            <h2 class="section-title">Programming in <span class="highlight" data-i18n="skill-csharp-title-detail">C#</span></h2>
             
             <div class="about-content glass-panel" style="max-width: 900px; margin: 0 auto;">
                 <div class="about-text">
@@ -43,9 +51,9 @@
                         </svg>
                     </div>
                     
-                    <h3>Software Engineering & Object-Oriented Principles</h3>
-                    <p>C# (C-Sharp) is a modern, object-oriented, and type-safe programming language. Created by Microsoft, C# enables developers to build secure, cross-platform and robust applications that run elegantly within the .NET ecosystem.</p>
-                    <p>I employ C# for building complex business logic applications, actively leveraging strict object-oriented programming (OOP) principles to conceptualize and solve intricate software challenges. Through C#, I apply design patterns, maintain system scalability, and develop backend services that interface elegantly with databases and frontend frameworks.</p>
+                    <h3 data-i18n="csharp-detail-h3">Software Engineering & Object-Oriented Principles</h3>
+                    <p data-i18n="csharp-detail-p1">C# (C-Sharp) is a modern, object-oriented, and type-safe programming language. Created by Microsoft, C# enables developers to build secure, cross-platform and robust applications that run elegantly within the .NET ecosystem.</p>
+                    <p data-i18n="csharp-detail-p2">I employ C# for building complex business logic applications, actively leveraging strict object-oriented programming (OOP) principles to conceptualize and solve intricate software challenges. Through C#, I apply design patterns, maintain system scalability, and develop backend services that interface elegantly with databases and frontend frameworks.</p>
                 </div>
             </div>
         </div>
@@ -54,7 +62,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 Michal Weglewski. Designed with passion.</p>
+            <p data-i18n="footer-text">&copy; 2026 Michal Weglewski. Designed with passion.</p>
         </div>
     </footer>
 
