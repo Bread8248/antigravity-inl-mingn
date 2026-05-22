@@ -164,11 +164,19 @@ a {
    Navigation
 ========================================= */
 nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    padding: 3rem 0;
+    padding: 1.25rem 0;
+    transition: background var(--transition-medium), padding var(--transition-medium), box-shadow var(--transition-medium);
+}
+
+nav.scrolled {
+    background: rgba(17, 17, 17, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 1px 0 rgba(209, 176, 84, 0.15);
 }
 
 .nav-container {
@@ -299,7 +307,7 @@ input:checked+.slider:before {
    Welcome Section
 ========================================= */
 .welcome-section {
-    padding-top: 15vh;
+    padding-top: calc(15vh + 70px);
     min-height: 80vh;
     display: flex;
     align-items: center;
